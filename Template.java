@@ -2,16 +2,14 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.Random;
-import java.util.StringTokenizer;
-public class Main {
+import java.util.*;
 
+public class Main {
+    static FastScanner fs;
+    static  PrintWriter out;
     public static void main(String[] args) {
-        FastScanner fs = new FastScanner();
-        PrintWriter out = new PrintWriter(System.out);
+         fs = new FastScanner();
+        out = new PrintWriter(System.out);
 
         int T=fs.nextInt();
 //		int T=1;
@@ -30,6 +28,88 @@ public class Main {
 
     static final Random random=new Random();
     static final int mod=998244353;
+    static int[] readIArray(int[] a)
+    {    fs = new FastScanner();
+        for(int i=0;i<a.length;i++)
+        {
+            a[i]=fs.nextInt();
+        }
+        return a;
+    }
+
+    static long[] readLArray(long[] a)
+    {    fs = new FastScanner();
+        for(int i=0;i<a.length;i++)
+        {
+            a[i]=fs.nextInt();
+        }
+        return a;
+    }
+    static void PINT(int[] a,int n){
+        out=new PrintWriter(System.out);
+        for(int i=0;i<n;i++)
+        {
+            out.println(a[i]+" ");
+        }
+
+    }
+    static void PL(long[] a,int n){
+        out=new PrintWriter(System.out);
+        for(int i=0;i<n;i++)
+        {
+            out.println(a[i]+" ");
+        }
+
+    }
+    public void trace(int[] arr) {
+        System.err.println(Arrays.toString(arr));
+    }
+    public void trace(Integer[] arr) {
+        System.err.println(Arrays.toString(arr));
+    }
+    public void trace(long[] arr) {
+        System.err.println(Arrays.toString(arr));
+    }
+    public void trace(Long[] arr) {
+        System.err.println(Arrays.toString(arr));
+    }
+    public void trace(char[] arr) {
+        System.err.println(Arrays.toString(arr));
+    }
+    public void trace(Character[] arr) {
+        System.err.println(Arrays.toString(arr));
+    }
+    public void trace(Map<?, ?> map) {
+        System.err.println(map);
+    }
+    public void trace(int a, int... b) {
+        System.err.print(a + " ");
+        for (int i = 0; i < b.length - 1; i++) {
+            System.err.print(b[i] + " ");
+        }
+        System.err.println(b[b.length - 1]);
+    }
+    public void trace(double a, double... b) {
+        System.err.print(a + " ");
+        for (int i = 0; i < b.length - 1; i++) {
+            System.err.print(b[i] + " ");
+        }
+        System.err.println(b[b.length - 1]);
+    }
+    public void trace(long a, long... b) {
+        System.err.print(a + " ");
+        for (int i = 0; i < b.length - 1; i++) {
+            System.err.print(b[i] + " ");
+        }
+        System.err.println(b[b.length - 1]);
+    }
+    public void trace(char a, char... b) {
+        System.err.print(a + " ");
+        for (int i = 0; i < b.length - 1; i++) {
+            System.err.print(b[i] + " ");
+        }
+        System.err.println(b[b.length - 1]);
+    }
 
     static void ruffleSort(int[] a) {
         int n=a.length;//shuffle, then sort
