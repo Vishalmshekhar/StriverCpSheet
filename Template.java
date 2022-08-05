@@ -45,7 +45,7 @@ public class Main {
         }
         return a;
     }
-    static void PINT(int[] a,int n){
+    static void PI(int[] a,int n){
         out=new PrintWriter(System.out);
         for(int i=0;i<n;i++)
         {
