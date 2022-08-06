@@ -28,34 +28,18 @@ public class Main {
 
     static final Random random=new Random();
     static final int mod=998244353;
-    static int[] readIArray(int[] a)
-    {    fs = new FastScanner();
-        for(int i=0;i<a.length;i++)
-        {
-            a[i]=fs.nextInt();
-        }
-        return a;
-    }
-
-    static long[] readLArray(long[] a)
-    {    fs = new FastScanner();
-        for(int i=0;i<a.length;i++)
-        {
-            a[i]=fs.nextInt();
-        }
-        return a;
-    }
+    
     static void PI(int[] a,int n){
         out=new PrintWriter(System.out);
-        for(int i=0;i<n;i++)
+       for(int i : a)
         {
             out.println(a[i]+" ");
         }
 
     }
-    static void PL(long[] a,int n){
+    static void PL(long[] a){
         out=new PrintWriter(System.out);
-        for(int i=0;i<n;i++)
+        for(int i : a)
         {
             out.println(a[i]+" ");
         }
