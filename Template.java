@@ -37,14 +37,7 @@ public class Main {
         }
 
     }
-    static void PL(long[] a){
-        out=new PrintWriter(System.out);
-        for(int i : a)
-        {
-            out.println(a[i]+" ");
-        }
-
-    }
+ 
     public void trace(int[] arr) {
         System.err.println(Arrays.toString(arr));
     }
